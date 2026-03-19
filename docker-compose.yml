@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  pcapxray:
+    build: .
+    ports:
+      - "6080:6080"
+    volumes:
+      - ./pcaps:/pcaps
+    container_name: pcapxray_lab
